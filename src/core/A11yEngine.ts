@@ -39,8 +39,7 @@ class A11yEngine {
     } = this.state;
 
     // Apply contrast settings
-    if (contrastLevel === 1) root.classList.add("dark");
-    else if (contrastLevel > 1) root.classList.add(`a11y-contrast-${contrastLevel}`);
+    if (contrastLevel > 0) root.classList.add(`a11y-contrast-${contrastLevel}`);
 
     // Settings with multiple levels
     if (textSizeLevel > 0) root.classList.add(`a11y-text-size-${textSizeLevel}`);

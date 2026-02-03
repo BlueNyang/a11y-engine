@@ -1,7 +1,7 @@
 export const A11Y_STORAGE_KEY = "a11y-settings";
 
 export const A11Y_CONFIG = {
-  CONTRAST: { levels: 5, prefix: "a11y-contrast" },
+  CONTRAST: { levels: 4, prefix: "a11y-contrast" },
   TEXT_SIZE: { levels: 3, prefix: "a11y-text-size" },
   SPACING: { levels: 3, prefix: "a11y-spacing" },
   LINE_HEIGHT: { levels: 3, prefix: "a11y-leading" },
