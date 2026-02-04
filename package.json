@@ -1,6 +1,6 @@
 {
   "name": "@gscd-dev/a11y-engine",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A11yMARKET's Accessibility Library",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

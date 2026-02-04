@@ -1,4 +1,4 @@
-# @gscd/a11y-engine
+# @gscd-dev/a11y-engine
 
 **A11yMARKET's Accessibility Library**는 웹 애플리케이션의 접근성 설정을 통합 관리하고 실시간으로 적용하는 강력한 엔진입니다. 이 프로젝트는 [a11y-market-web](https://github.com/gscd-dev/a11y-market-web)에서 개발된 핵심 로직을 바탕으로 고도화되었습니다.
 
@@ -18,7 +18,7 @@
 ### 설치
 
 ```bash
-npm install @gscd/a11y-engine
+npm install @gscd-dev/a11y-engine
 ```
 
 ### 스타일 포함
@@ -27,7 +27,7 @@ npm install @gscd/a11y-engine
 
 ```javascript
 // main.ts(js) 또는 index.ts(js) 등 entry 파일에 추가
-import "@gscd/a11y-engine/css";
+import "@gscd-dev/a11y-engine/css";
 ```
 
 ---
@@ -39,7 +39,7 @@ import "@gscd/a11y-engine/css";
 프레임워크 없이 사용할 경우, `a11yEngine` 인스턴스를 직접 구독하고 메서드를 호출합니다.
 
 ```typescript
-import { a11yEngine } from "@gscd/a11y-engine";
+import { a11yEngine } from "@gscd-dev/a11y-engine";
 
 // 상태 변경 구독
 a11yEngine.subscribe((state) => {
@@ -58,7 +58,7 @@ btn.addEventListener("click", () => {
 `useA11y` 훅을 통해 상태와 액션을 쉽게 가져올 수 있습니다.
 
 ```tsx
-import { useA11y } from "@gscd/a11y-engine/react";
+import { useA11y } from "@gscd-dev/a11y-engine/react";
 
 const A11yControl = () => {
   const { state, actions } = useA11y("ko-KR");
@@ -77,7 +77,7 @@ Vue 전용 컴포저블을 지원하며, 반응형 상태를 반환합니다.
 
 ```vue
 <script setup>
-import { useA11y } from "@gscd/a11y-engine/vue";
+import { useA11y } from "@gscd-dev/a11y-engine/vue";
 
 const { state, actions } = useA11y("ko-KR");
 </script>
